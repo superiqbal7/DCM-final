@@ -13,6 +13,90 @@
     background-color: #4974a2;
 }
 
+.create-m {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.nxt {
+    text-align: right;
+}
+
+.nxt_btn {
+     width: 80px;
+}
+.create-meeting-form, .create-agenda-form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px #7d9ce8;
+  border: 1px solid #8ea0ce;
+  font-weight: 400;
+  font-size: 14px;
+}
+.form-control-file {
+  font-size: 14px;
+}
+
+.custom-control-label {
+    font-weight: 300;
+}
+
+.mr-3 { margin-right: 3px; }
+.ml-3 { margin-left: 3px; }
+.mt-3 { margin-top: 3px; }
+.mb-3 { margin-bottom: 3px; }
+
+.mr-10 { margin-right: 10px; }
+.mt-10 { margin-top: 10px; }
+
+.thead-dark {
+    background-color: ;
+}
+
+.thead-dark > tr > th {
+       font-weight: 600;
+}
+
+.participant {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.h4text {
+    color: #545070;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.icon-add-del > a > i {
+    font-size: 18px;
+}
+
+.ion-android-person-add {
+    color: #556b5e;
+    margin-right: 5px;
+}
+
+.ion-android-delete {
+    color: #556b5e;
+}
+
+.participant-btn{
+    margin-right: 50px;
+}
+
+.publish_btn {
+    text-align: right;
+}
+
+.publish_btn > a {
+    width: 100px;
+}
+
 /*
 App.css
 Template name: AppUI

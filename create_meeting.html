@@ -12,11 +12,12 @@
     <title>Create Meeting</title>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" />
-    <link rel="icon" href="assets/img/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/img/favicons/icon1.PNG" />
+    <link rel="icon" href="assets/img/favicons/icon2.png" />
 
     <!-- Google fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,900%7CRoboto+Slab:300,400%7CRoboto+Mono:400" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
     <!-- Page JS Plugins CSS -->
     <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css" />
@@ -170,9 +171,215 @@
 
             <main class="app-layout-content">
 
-                <div class="container-fluid p-y-md">
-                    <h2 class="section-title">Your content</h2>
-                    <p>...</p>
+                <div class="col-md-12 create-m">
+                    <!-- Card Tabs Justified Alternative Style -->
+                    <div class="card">
+                        <ul class="nav nav-tabs nav-tabs-icons nav-tabs-alt nav-justified" data-toggle="tabs">
+                            <li class="active">
+                                <a href="#btabs-alt-static-justified-home"><i class="fa fa-info-circle"></i>Meeting Info</a>
+                            </li>
+                            <li class="">
+                                <a href="#btabs-alt-static-justified-profile"><i class="fa fa-file-pdf-o"></i>Agenda</a>
+                            </li>
+                            <li class="">
+                                <a href="#btabs-alt-static-justified-activity"><i class="ion-android-people"></i>Participants</a>
+                            </li>
+                            <li class="">
+                                <a href="#btabs-alt-static-justified-settings"><i class="fa fa-upload"></i>Publish Meeting</a>
+                            </li>
+                        </ul>
+                        <div class="card-block tab-content">
+                            <div class="tab-pane active" id="btabs-alt-static-justified-home">
+
+                                <h4 class="text-center h4text">Meeting Details</h4><br />
+                                <form action="#" class="create-meeting-form">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Meeting Title</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter meeting title" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Meeting Type</label>
+                                        <div class="col-sm-6">
+                                            <select id="inputState" class="form-control">
+                                                <option selected="">Choose...</option>
+                                                <option>Marketing</option>
+                                                <option>Tech</option>
+                                                <option>Support</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Venue</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter the venue" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Meeting Details</label>
+                                        <div class="col-sm-6">
+                                            <textarea rows="5" placeholder="Enter the meeting details" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Notes for Perticipants</label>
+                                        <div class="col-sm-6">
+                                            <textarea rows="3" placeholder="notes" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-9 nxt">
+
+                                            <a class="nav-link btn btn-xs btn-danger nxt_btn" data-toggle="tab" href="#agendas">Next</a>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="btabs-alt-static-justified-profile">
+
+                                <h4 class="text-center h4text">Create Agenda</h4><br />
+
+                                <form action="#" class="create-agenda-form">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Agenda Title</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter agenda title" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Summary</label>
+                                        <div class="col-sm-6">
+                                            <textarea rows="3" placeholder="Enter agenda summary" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Agenda Order</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Enter agenda order" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Upload agenda</label>
+                                        <div class="form-group col-sm-6">
+                                            <input type="file" class="form-control-file" id="uploadAgenda">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 col-form-label"></label>
+                                        <div class="col-sm-3 custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Allow comments on this
+                                                agenda</label>
+                                        </div>
+                                    </div>
+                                    <div class="row nxt mt-10">
+                                        <div class="col-sm-9">
+                                            <a class="nav-link btn btn-xs btn-primary mr-10" data-toggle="tab" href="#agendas">Add more Agenda</a>
+                                            <a class="nav-link btn btn-xs btn-danger nxt_btn" data-toggle="tab" href="#next">Next</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="btabs-alt-static-justified-activity">
+
+                                <h4 class="text-center h4text">Participants</h4><br />
+
+                                <div class="participant card card-body">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">User</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Mail</th>
+                                                <th scope="col">Phone</th>
+                                                <th scope="col">Designation</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>test@gmail.com</td>
+                                                <td>01818000000</td>
+                                                <td>Senior Teacher</td>
+                                                <td class="icon-add-del">
+                                                    <a href="#"><i class="ion-android-person-add"></i></a>
+                                                    <a href="#"><i class="ion-android-delete"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>test@gmail.com</td>
+                                                <td>01818000000</td>
+                                                <td>Senior Teacher</td>
+                                                <td class="icon-add-del">
+                                                    <a href="#"><i class="ion-android-person-add"></i></a>
+                                                    <a href="#"><i class="ion-android-delete"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>test@gmail.com</td>
+                                                <td>01818000000</td>
+                                                <td>Senior Teacher</td>
+                                                <td class="icon-add-del">
+                                                    <a href="#"><i class="ion-android-person-add"></i></a>
+                                                    <a href="#"><i class="ion-android-delete"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Mark</td>
+                                                <td>test@gmail.com</td>
+                                                <td>01818000000</td>
+                                                <td>Senior Teacher</td>
+                                                <td class="icon-add-del">
+                                                    <a href="#"><i class="ion-android-person-add"></i></a>
+                                                    <a href="#"><i class="ion-android-delete"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Jacob</td>
+                                                <td>test@gmail.com</td>
+                                                <td>01818000000</td>
+                                                <td>Senior Teacher</td>
+                                                <td class="icon-add-del">
+                                                    <a href="#"><i class="ion-android-person-add"></i></a>
+                                                    <a href="#"><i class="ion-android-delete"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row nxt mt-10 participant-btn">
+                                    <div class="col-sm-12">
+                                        <a class="nav-link btn btn-xs btn-primary mr-10 nxt_btn" data-toggle="tab" href="#agendas">Add All</a>
+                                        <a class="nav-link btn btn-xs btn-danger nxt_btn" data-toggle="tab" href="#next">Next</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane" id="btabs-alt-static-justified-settings">
+                               
+                                <h4 class="text-center h4text">Meeting Publish</h4><br />
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Everything ok?</label>
+                                    <div class="col-sm-8 publish_btn">
+                                         <a class="nav-link btn btn-xs btn-danger" data-toggle="tab" href="#next">Publish</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card Tabs Justified Default Style -->
                 </div>
 
             </main>
