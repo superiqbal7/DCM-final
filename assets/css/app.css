@@ -176,7 +176,13 @@
     background-color: #dce5e3;
 }
 
+.app-layout-content {
+    text-align: center;
+}
 
+.calendar {
+    margin-top: 30px;
+}
 
 
 /*
