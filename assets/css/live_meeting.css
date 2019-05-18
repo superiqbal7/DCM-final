@@ -1,0 +1,81 @@
+.screen {
+    height: 450px;
+    background-color: #44597a;
+    color: #dddddd;
+}
+
+.screen > h2 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.comment {
+    height: 450px;
+}
+
+.comment .card {
+    height: 450px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+}
+
+.comment .card > hr {
+    margin-top: -15px;
+}
+
+.action-panel {
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+}
+
+.user-chat .col-md-10 {
+    margin-top: -25px;
+}
+
+.card-body > ul > li {
+    list-style: none;
+    margin-left: -50px;
+}
+
+.card-body {
+    height: 330px;
+    padding: 15px;
+}
+
+.card-body > ul {
+    height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card-body .input-group {
+    position: absolute;
+    bottom: 0;
+    width: 335px;
+    margin-left: -15px;
+    border: 1px solid #ddd;
+}
+
+.list-group {
+    font-size: 14px;
+}
+
+.list-agenda {
+    color: #ba3f47;
+}
+
+.announcemnt {
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+}
+
+.announcemnt  .list-group-item {
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+

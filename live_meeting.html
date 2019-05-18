@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- Document title -->
-    <title>Current Meeting</title>
+    <title>Live</title>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/favicons/icon1.PNG" />
     <link rel="icon" href="assets/img/favicons/icon2.png" />
-    
+
     <!-- Google fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,900%7CRoboto+Slab:300,400%7CRoboto+Mono:400" />
 
@@ -27,6 +27,7 @@
     <link rel="stylesheet" id="css-ionicons" href="assets/css/ionicons.css" />
     <link rel="stylesheet" id="css-bootstrap" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" id="css-app" href="assets/css/app.css" />
+    <link rel="stylesheet" id="css-app" href="assets/css/live_meeting.css" />
     <link rel="stylesheet" id="css-app-custom" href="assets/css/app-custom.css" />
     <!-- End Stylesheets -->
 </head>
@@ -113,7 +114,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <span class="navbar-page-title">
-                                Current Meeting
+                                Live Meeting
                             </span>
                         </div>
 
@@ -158,6 +159,7 @@
                                         </li>
                                     </ul>
                                 </li>
+
                             </ul>
                             <!-- .navbar-right -->
                         </div>
@@ -170,55 +172,128 @@
 
             <main class="app-layout-content">
 
-                <div class="col-md-12">
-                    <!-- Card Tabs Justified Alternative Style -->
-                    <div class="card current-meeting">
-                        <ul class="nav nav-tabs nav-tabs-icons nav-tabs-alt nav-justified" data-toggle="tabs">
-                            <li class="active">
-                                <a href="#btabs-alt-static-justified-home"><i class=""></i><strong>Current Meeting</strong></a>
-                            </li>
-                        </ul>
-                        <div class="card-block tab-content">
-                            <div class="tab-pane active" id="btabs-alt-static-justified-home">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Meeting Title</th>
-                                            <th scope="col">Duration</th>
-                                            <th scope="col">Participants</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">Final Exam Meeting</td>
-                                            <td>2 hours</td>
-                                            <td>15</td>
-                                            <td>5:00 pm - 04 Agust 2019</td>
-                                            <td><a href="live_meeting.html" class="btn btn-xs btn-danger join-btn">Join</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">Sudden Meeting</td>
-                                            <td>2 hours</td>
-                                            <td>15</td>
-                                            <td>5:00 pm - 04 April 2019</td>
-                                            <td><a href="live_meeting.html" class="btn btn-xs btn-danger join-btn">Join</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                <div class="container-fluid p-y-md p-x-md">
+                    <div class="row">
+                        <div class="col-md-8 screen">
+                            <h2>Live Meeting</h2>
+                        </div>
+                        <div class="col-md-4 comment">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Comments <i class="fa fa-commenting-o"></i></h5>
+                                </div>
+                                <hr />
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="user-chat row">
+                                            <div class="col-md-2 col-sm-2">
+                                                <img class="img-circle" src="assets/img/people/shawon.jpg" alt="people">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10">
+                                                <h6>Shawon</h6>
+                                                <p>This is awesome</p>
+                                            </div>
+                                        </li>
+                                        <li class="user-chat row">
+                                            <div class="col-md-2 col-sm-2">
+                                                <img class="img-circle" src="assets/img/people/iqbal.jpg" alt="people">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10">
+                                                <h6>Iqbal</h6>
+                                                <p>Yes Right</p>
+                                            </div>
+                                        </li>
+                                        <li class="user-chat row">
+                                            <div class="col-md-2 col-sm-2">
+                                                <img class="img-circle" src="assets/img/people/soha.jpg" alt="people">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10">
+                                                <h6>Soha</h6>
+                                                <p>Lol</p>
+                                            </div>
+                                        </li>
+                                        <li class="user-chat row">
+                                            <div class="col-md-2 col-sm-2">
+                                                <img class="img-circle" src="assets/img/people/soha.jpg" alt="people">
+                                            </div>
+                                            <div class="col-md-10 col-sm-10">
+                                                <h6>Soha</h6>
+                                                <p>Lol</p>
+                                            </div>
+                                        </li>
 
+                                    </ul>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Type...">
+                                        <span class="input-group-btn">
+                                            <button class="btn" type="button"><i class="ion-android-send"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- End Card Tabs Justified Default Style -->
                 </div>
-                <!-- .col-md-12 -->
+
+                <div class="card action-panel">
+                    <ul class="nav nav-tabs nav-tabs-icons nav-tabs-alt nav-justified" data-toggle="tabs">
+                        <li class="active">
+                            <a href="#btabs-alt-static-justified-home"><i class="ion-ios-book-outline"></i> Description</a>
+                        </li>
+                        <li>
+                            <a href="#btabs-alt-static-justified-profile"><i class="fa fa-file-pdf-o"></i> Agenda</a>
+                        </li>
+                        <li>
+                            <a href="#btabs-alt-static-justified-activity"><i class="ion-ios-gear"></i> Action</a>
+                        </li>
+
+                        <li>
+                            <a href="#btabs-alt-static-justified-announcement"><i class="ion-speakerphone"></i> Announcement</a>
+                        </li>
+                    </ul>
+                    <div class="card-block tab-content">
+                        <div class="tab-pane active" id="btabs-alt-static-justified-home">
+                            <h5>Meeting Details</h5>
+                            <hr>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda mollitia sequi numquam asperiores minima. Odio minima harum sit iusto mollitia facere accusamus ullam sed velit culpa! Deleniti hic delectus veritatis necessitatibus non officiis nemo ducimus perferendis magni assumenda excepturi dicta aliquam ad, possimus sit quos, molestias illum, temporibus quaerat maiores nobis, et minus eligendi unde?<br><br> Illo, molestias, voluptatem. Voluptate consequatur hic tempora tempore reprehenderit assumenda quae, sed quos? Neque necessitatibus reiciendis adipisci facere provident a harum dolor doloremque,<br><br> atque ex dolorem modi, saepe est, exercitationem consectetur! Consequuntur explicabo earum iusto repudiandae omnis vel, facilis facere necessitatibus quis tenetur aspernatur. Mollitia nihil nesciunt illo iure ad obcaecati et error porro alias maiores modi dicta aspernatur, facere ex labore quasi enim, cupiditate sequi, accusantium fugiat exercitationem nostrum! Officiis debitis quas ipsam odio nihil mollitia, earum perferendis.<br><br> Quam nulla ad totam velit fugit aspernatur corporis explicabo eum! Sed id dolor, deleniti corrupti necessitatibus minima, ipsam perspiciatis sequi provident nisi laborum eius, vel quam voluptates! Optio iste, accusantium repellendus enim consequuntur sequi officiis, temporibus porro pariatur assumenda debitis quia aliquam illum, et deleniti laborum nemo repudiandae nihil in! Hic blanditiis ipsum, voluptatibus quae explicabo tenetur odit ipsa mollitia, amet, vero distinctio eius placeat perspiciatis!</p>
+                        </div>
+                        <div class="tab-pane" id="btabs-alt-static-justified-profile">
+                            <h5>Agenda List</h5>
+                            <hr>
+                            <hr>
+                            <div class="list-group list-agenda">
+                                <a href="#" class="list-group-item">1. Lorem ipsum dolor consectetur adipisicing elit.pdf</a>
+                                <a href="#" class="list-group-item">2. Lorem ipsum dolor sit amet consectetur.pdf</a>
+                                <a href="#" class="list-group-item">3. Lorem ipsum dolor sit amet.pdf</a>
+                                <a href="#" class="list-group-item">4. Lorem ipsum dolor sit amet Sunt.pdf</a>
+                                <a href="#" class="list-group-item">5. Lorem ipsum dolor sit amet consectetur adipisicing.pdf</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="btabs-alt-static-justified-activity">
+                            <h5>Action Plan</h5>
+                            <hr>
+                            <hr>
+                            <p>There are no action taken.</p>
+                        </div>
+                        <div class="tab-pane" id="btabs-alt-static-justified-announcement">
+                            <h5>Announcemnt</h5>
+                            <hr>
+                            <hr>
+                            <ul class="list-group announcemnt">
+                                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, deleniti.</li>
+                                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam in, repellat eaque corporis excepturi explicabo necessitatibus eius perspiciatis earum asperiores.</li>
+                                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minus, similique nihil labore corporis corrupti.</li>
+                                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui assumenda, nesciunt praesentium sed ipsa exercitationem libero ducimus ab.</li>
+                                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore assumenda tempora mollitia, incidunt omnis culpa deleniti soluta non illo aliquam libero nostrum ipsa dolor laborum eius minima quas velit explicabo, tempore fugit hic. Aliquam quod delectus inventore, amet a voluptas?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
         </div>
-
-        </main>
-
-    </div>
     </div>
 
 
